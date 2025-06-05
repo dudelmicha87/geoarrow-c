@@ -181,7 +181,7 @@ if(GEOARROW_BUNDLE)
   endif()
 else()
   # Normal CMake build
-  add_library(geoarrow ${GEOARROW_SOURCES} ${GEOARROW_DOUBLE_PARSE_SOURCE}
+  add_library(geoarrow SHARED ${GEOARROW_SOURCES} ${GEOARROW_DOUBLE_PARSE_SOURCE}
                        ${GEOARROW_DOUBLE_PRINT_SOURCE})
 
   target_include_directories(geoarrow
